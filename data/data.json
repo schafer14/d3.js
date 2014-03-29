@@ -1,0 +1,10 @@
+{
+	"bubbles" :[
+		{"name":"Banner", "size": 50},
+		{"name":"Asher", "size": 75},
+		{"name":"Zee", "size": 75},
+		{"name":"Andrew", "size": 100},
+		{"name":"James", "size": 125},
+		{"name": "Naomi", "size": 150}
+	]
+}

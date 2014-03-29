@@ -1,0 +1,24 @@
+{
+    "name": "Banner's Stuff",
+    "children": [
+    {
+        "name": "Athletics",
+        "children": [
+            {"name": "Soccer", "size": 25000},
+            {"name": "Netball", "size": 2500},
+            {"name": "Basketball", "size": 5000},
+            {"name": "TriSports", "children": [
+                {"name": "Biking", "size": 5000},  
+                {"name": "Running", "size": 10000},  
+                {"name": "Swimming", "size": 4000}  
+            ]}
+        ]
+    },
+    {
+        "name": "Codes",
+        "children": [
+            {"name": "fuzzy-octo-cyril", "size": 7500},
+            {"name": "potential-octo-archer", "size": 9500}
+        ]
+    }
+]}
