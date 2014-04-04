@@ -32,10 +32,6 @@ var svg = d3.select('#figure').append('svg')
 	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 d3.tsv('data/data.tsv', function(error, data) {
-	data.forEach(function(d) {
-		d.frequency =+ d.frequency;
-	});
-
 	x.domain(data.map(function(d) {return d.letter;}));
 	y.domain([0, d3.max(data, function(d) {return d.frequency; })]);
 
