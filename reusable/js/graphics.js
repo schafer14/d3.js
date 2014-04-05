@@ -126,13 +126,19 @@ d3.custom.barChart = function module() {
 };
 
 var chart = d3.custom.barChart();
+var chart1 = d3.custom.barChart();
 
 function update() {
     var data = randomDataset();
+    var d = randomDataset();
 
     d3.select('#figure')
         .datum(data)
         .call(chart);
+
+    d3.select('#i')
+        .datum(d)
+        .call(chart1);
 }
 
 function randomDataset() {
