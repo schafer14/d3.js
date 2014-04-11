@@ -32,7 +32,6 @@ function render(data, cat) {
 			.style('width', function(d) {
 				return (d.val* 10) + 'px';
 			})
-			.style('color', 'blue')
 			.select('span')
 				.text(function(d) {
 					return d.name;
@@ -43,6 +42,11 @@ function render(data, cat) {
 		.data(data)
 		.exit()
 			.remove();
+
+	d3.select('#figure').selectAll('div.h-bar')
+		.sort(function(a, b) {
+			return a.val > b.val ? -1 : 1;
+		});
 
 	d3.select('#figure').selectAll('div.h-bar')
 		.filter(function(d, i) {
